@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+
+  <h1>We've found your car!</h1>
+  <ul>
+    <li>Make: {{ car.make }}</li>
+    <li>Model: {{ car.model }}</li>
+    <li>Year: {{ car.year }}</li>
+  </ul>
+
+  <a href="{{url_for('index')}}">See all the cars</a>
+  <br>
+  <a href="{{url_for('edit', id=car.id)}}">Edit this car</a>
+  
+{% endblock %}

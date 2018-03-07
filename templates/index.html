@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<ul>
+  {% for car in cars %}
+  <li>{{ car.make, car.model, car.year }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
